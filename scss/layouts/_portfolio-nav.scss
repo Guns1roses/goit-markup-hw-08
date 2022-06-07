@@ -1,0 +1,53 @@
+/* NAVIGATION PORTFOLIO */
+
+.portfolio__container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navigation {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.navigation__item {
+    margin-right: 8px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.navigation__button.navigation__button-active {
+    color: var(--accent-secondary-text-color);
+    background-color: var(--accent-text-color);
+    /* box-shadow: var(--btn-shadow); */
+    border-radius: 4px;
+}
+
+.portfolio .navigation__button {
+    padding: 6px 22px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+
+    color: var(--main-text-color);
+    background-color: var(--another-bg-color);
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+        &:focus {
+            color: var(--accent-secondary-text-color);
+            background-color: var(--accent-text-color);
+    
+            box-shadow: var(--btn-shadow);
+        }
+}

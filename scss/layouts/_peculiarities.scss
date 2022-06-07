@@ -1,0 +1,51 @@
+/* Peculiarities */
+
+.peculiarities__list {
+    display: flex;
+    align-items: center;
+}
+
+.peculiarities__item {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+            margin-right: 0px;
+        }
+}
+
+
+.peculiarities__subtitle {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-text-color);
+}
+
+.peculiarities__list .peculiarities__text {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--secondary-text-color);
+}
+
+.peculiarities__icons {
+    display: block;
+    width: 70px;
+    height: 70px;
+
+    &-box {
+            margin-bottom: 30px;
+            padding: 25px 100px;
+            text-align: center;
+    
+            background-color: var(--secondary-bg-color);
+            border-radius: 4px;
+        }
+}

@@ -1,0 +1,134 @@
+
+/* FORM MODAL */
+
+.form__title {
+    display: block;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+
+    color: #212121;
+}
+
+.form__label,
+.form__textarea {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form__label {
+    position: relative;
+
+    transition: border-color var(--animation);
+}
+
+.form__label:focus-within .icon-svg,
+.form__label:hover .icon-svg {
+    fill: #2196f3;
+}
+
+.form__text {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.form__input {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    color: #212121;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border var(--animation);
+}
+
+.form__input:hover,
+.form__comment:hover,
+.form__input:focus,
+.form__comment:focus {
+    border-color: #2196f3;
+    outline: none;
+    cursor: pointer;
+}
+
+.form__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 14px;
+
+    fill: #212121;
+    transition: fill var(--animation);
+    cursor: pointer;
+}
+
+.form__input:hover+.form__icon,
+.form__input:focus+.form__icon {
+    fill: var(--accent-text-color);
+}
+
+.form__textarea {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+
+    cursor: pointer;
+}
+
+.form__comment {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-btn {
+    padding: 10px 55px;
+
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--animation), box-shadow var(--animation);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+        &:focus {
+            background-color: #188ce8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+.form-btn.btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+}
+

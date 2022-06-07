@@ -1,0 +1,24 @@
+/* General */
+
+body {
+    font-family: var(--main-font);
+
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+    background-color: var(--accent-secondary-text-color);
+}
+
+address {
+    margin-top: 20px;
+
+    font-style: normal;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
