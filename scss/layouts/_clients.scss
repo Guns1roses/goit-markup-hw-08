@@ -1,34 +1,54 @@
 /*Clients*/
 
 .clients-container__title {
-    margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-bottom: 30px;
+        color: var(--main-text-color);
 
-    color: var(--main-text-color);
+@include mq(desktop) {
+        margin-bottom: 50px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+}
 }
 
 .clients-container__list {
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
+
+    margin-top: -30px;
+    margin-left: -30px;
+
+    @include mq(desktop) {
+        flex-wrap: nowrap;
+    }
 }
 
-.clients-container__item:not(:last-child) {
-    margin-right: 30px;
+.clients-container__item {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .clients-container__link {
     display: flex;
-    width: 170px;
-    height: 92px;
     justify-content: center;
     align-items: center;
 
+    min-width: 210px;
+    height: 92px;
+    
     transition: color var(--animation), border var(--animation);
     color: #afb1b8;
 
@@ -40,6 +60,14 @@
             color: var(--accent-text-color);
             border-color: var(--accent-text-color);
         }
+
+@include mq(tablet) {
+    min-width: 226px;
+}
+
+@include mq(desktop) {
+    min-width: 170px;
+}
 }
 
 .clients-container__icon {

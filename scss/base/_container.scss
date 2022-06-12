@@ -2,11 +2,9 @@
     /* outline: 1px solid tomato; */
     // width: 1200px;
 
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 
     // mobile screen from 480px
         @media screen and (min-width: 480px) {
@@ -14,7 +12,7 @@
         }
     
         @include mq(mobile) {
-            width: 448px;
+            width: 480px;
         }
     
         // tablet screen
@@ -23,7 +21,7 @@
         // }
     
         @include mq(tablet) {
-            width: 720px;
+            width: 768px;
         }
     
         // desktop screen
