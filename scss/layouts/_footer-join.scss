@@ -1,20 +1,35 @@
 /* Join */
 
 .join {
-    margin-right: 93px;
+text-align: center;
+
+@include mq(tablet) {
+    flex-basis: 50%;
+}
+
+@include mq(desktop) {
+    text-align: left;
+    flex-basis: initial;
+}
 }
 
 .join__subtitle {
+    margin-bottom: 20px;
+
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 
     color: var(--accent-secondary-text-color);
-    margin-bottom: 20px;
 }
 
 .join__list {
     display: flex;
+    justify-content: center;
+
+    @include mq(desktop) {
+        justify-content: flex-start;
+    }
 }
 
 .join__item:not(:last-child) {
@@ -23,11 +38,11 @@
 
 .join__link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 44px;
     height: 44px;
-
-    justify-content: center;
-    align-items: center;
 
     transition: background-color var(--animation);
 
