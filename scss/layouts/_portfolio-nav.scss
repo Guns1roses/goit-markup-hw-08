@@ -1,29 +1,35 @@
 /* NAVIGATION PORTFOLIO */
 
-.portfolio__container {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+// .portfolio__container {
+//     margin-top: 0;
+//     margin-bottom: 0;
+// }
 
 .navigation {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: 40px;
+
+    @include mq(tablet) {
+     justify-content: center;
+    }
+    
 }
 
 .navigation__item {
     margin-right: 8px;
+    margin-bottom: 15px;
 
     &:last-child {
             margin-right: 0;
+            margin-bottom: 0;
         }
-}
 
-.navigation__button.navigation__button-active {
-    color: var(--accent-secondary-text-color);
-    background-color: var(--accent-text-color);
-    /* box-shadow: var(--btn-shadow); */
-    border-radius: 4px;
+        @include mq(tablet) {
+            margin-bottom: 0;
+        }
 }
 
 .portfolio .navigation__button {
@@ -32,6 +38,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.03em;
 
     transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
@@ -50,4 +57,11 @@
     
             box-shadow: var(--btn-shadow);
         }
+}
+
+.navigation__button.navigation__button-active {
+    color: var(--accent-secondary-text-color);
+    background-color: var(--accent-text-color);
+    /* box-shadow: var(--btn-shadow); */
+    border-radius: 4px;
 }
