@@ -1,12 +1,10 @@
 /* Peculiarities */
 
 .peculiarities__list {
-    list-style: none;
 
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
-            align-items: center;
             margin-top: -30px;
             margin-left: -30px;
         }
