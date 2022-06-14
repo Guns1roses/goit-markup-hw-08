@@ -149,6 +149,7 @@
 }
 
 .header-nav__link {
+    color: var(--main-text-color);
     transition: color var(--animation);
 
     &:hover, &:focus {
@@ -256,6 +257,8 @@ color: var(--accent-text-color);
 }
 
 .contacts__link {
+
+    color: #757575;
     transition: color var(--animation);
 
 &:hover,
@@ -263,15 +266,27 @@ color: var(--accent-text-color);
         color: var(--accent-text-color);
     }
 
-    @include mq(tablet) {
+    @include mq(mobile-only) {
+        &--phone {
+            color: var(--accent-text-color);
+            transition: background-color var(--animation);
+
+            &--phone:hover, &--phone:focus {
+                color: var(--accent-text-color);
+                background-color: violet;
+            }
+        }
+    }
+    
+    @include mq(tablet-only) {
+
         &--phone{
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color var(--animation);
         }
         
         &--phone:hover, &--phone:focus {
-            background-color: var(--accent-text-color);
-            color: #ffffff;
-            border-radius: 2px;
+            color: var(--accent-text-color);
+            border-radius: 1px;
         }
     }
 
@@ -335,7 +350,8 @@ color: var(--accent-text-color);
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-     color: var(--accent-text-color);
+    color: var(--accent-text-color);
+    
 
         &:not(:last-child) {
             margin-right: 10px;
@@ -346,17 +362,16 @@ color: var(--accent-text-color);
                 margin-left: 10px;
                 width: 1px;
                 height: 22px;
-                background-color: #000000;
+                background-color: #212121;
         }      
      }
 }
 
 .socials-mobile__link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
     &:hover, &:focus {
-        background-color: orange;
-        color: #ffffff;
+        color: var(--accent-text-color);
         border-radius: 2px;
     }
 }

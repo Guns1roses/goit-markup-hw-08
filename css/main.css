@@ -646,6 +646,7 @@ img {
 }
 
 .header-nav__link {
+  color: var(--main-text-color);
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
@@ -760,6 +761,7 @@ img {
 }
 
 .contacts__link {
+  color: #757575;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
@@ -768,15 +770,26 @@ img {
   color: var(--accent-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .contacts__link--phone {
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--accent-text-color);
+    -webkit-transition: background-color var(--animation);
+    transition: background-color var(--animation);
+  }
+  .contacts__link--phone--phone:hover, .contacts__link--phone--phone:focus {
+    color: var(--accent-text-color);
+    background-color: violet;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__link--phone {
+    -webkit-transition: color var(--animation);
+    transition: color var(--animation);
   }
   .contacts__link--phone:hover, .contacts__link--phone:focus {
-    background-color: var(--accent-text-color);
-    color: #ffffff;
-    border-radius: 2px;
+    color: var(--accent-text-color);
+    border-radius: 1px;
   }
 }
 
@@ -867,17 +880,16 @@ img {
   margin-left: 10px;
   width: 1px;
   height: 22px;
-  background-color: #000000;
+  background-color: #212121;
 }
 
 .socials-mobile__link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-mobile__link:hover, .socials-mobile__link:focus {
-  background-color: orange;
-  color: #ffffff;
+  color: var(--accent-text-color);
   border-radius: 2px;
 }
 
