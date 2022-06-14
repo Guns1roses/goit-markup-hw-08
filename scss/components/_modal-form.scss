@@ -1,9 +1,21 @@
 
 /* FORM MODAL */
+.form {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(mobile-only) {
+        padding: 20px;
+        min-width: 90vw;
+    }
+
+    @include mq(mobile) {
+        padding: 40px;
+    }
+}
 
 .form__title {
-    display: block;
-
+    // display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.14;
@@ -13,6 +25,14 @@
     margin-bottom: 12px;
 
     color: #212121;
+
+    @include mq(tablet-only) {
+        line-height: 1.5;
+    }
+
+    @include mq(tablet) {
+        line-height: 1.15;
+    }
 }
 
 .form__label,

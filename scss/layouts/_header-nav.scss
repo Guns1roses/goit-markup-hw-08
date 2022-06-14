@@ -94,8 +94,6 @@
 
     @include mq(tablet) {
         position: static;
-        
-            margin-left: 88px;
             padding: 0;
         
             flex-direction: row;
