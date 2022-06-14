@@ -251,12 +251,12 @@ img {
 }
 
 .form__title {
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.14;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;
   color: #212121;
 }
 
@@ -438,10 +438,20 @@ img {
 }
 
 .form-custom-checkbox--desc {
-  margin-right: 5px;
+  font-size: 12px;
   line-height: 1.71;
   color: #757575;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-custom-checkbox--desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox-link {
@@ -1156,15 +1166,18 @@ img {
 .team__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
-.team__list {
-  list-style: none;
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 @media screen and (min-width: 768px) {

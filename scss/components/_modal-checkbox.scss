@@ -38,12 +38,20 @@
 }
 
 .form-custom-checkbox--desc {
-    margin-right: 5px;
+    font-size: 12px;
     line-height: 1.71;
 
     color: #757575;
 
     cursor: pointer;
+
+    @include mq(desktop) {
+        font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+    }
 }
 
 .checkbox-link {
