@@ -160,7 +160,7 @@ img {
 
 .scroll-top {
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
