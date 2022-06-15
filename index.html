@@ -23,7 +23,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__container">
         <nav class="header__navigation">
           <a class="logo link" href="index.html" lang="en"
@@ -804,7 +804,16 @@
       </div>
     </footer>
 
+    <a class="scroll-top" href="#header">
+      <svg class="arrow-top" width="30" height="30">
+        <use href="./images/sprite.svg#scroll"></use>
+      </svg>
+    </a>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mob-menu.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
