@@ -53,7 +53,11 @@
 
     color: var(--main-text-color);
 
-    @include mq(desktop) {
+    @include mq(mobile-only) {
+        text-align: center;
+    }
+
+    @include mq(tablet) {
         text-align: left;
     }
 }
